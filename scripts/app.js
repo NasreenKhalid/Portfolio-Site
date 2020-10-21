@@ -150,7 +150,7 @@ const menu = [
     title: "Online Books Keeping App",
     category: "Node",
     Genre: "Express and Node JS",
-    img: "./images/online_books_app.png",
+    img: "./projects/online_books_app.png",
     desc: `CRUD Node JS App to keep a record of books`,
   },
 
