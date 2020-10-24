@@ -15,7 +15,11 @@ function mixClear() {
 }
 
 $(document).ready(function () {
-  $(".button-collapse").sideNav();
+  $(".button-collapse").sideNav({
+    menuWidth: 300, // Default is 240
+  closeOnClick: true 
+  });
+  
 });
 
 // Typewriter Animation
@@ -125,6 +129,7 @@ const menu = [
     desc: `A complete Social Media Network type of application for Developers to stay connected. 
     Features include: Register,Login,Create/Update/Delete Profile, Add Posts, Likes/Dislikes and Comments.
         Using the MERN Stack with complete Redux functionality and Node JS for backend development. `,
+        code:`https://github.com/NasreenKhalid/Social-Media-App-for-Developers-`
   },
   {
     id: 2,
@@ -134,6 +139,7 @@ const menu = [
     img: "./projects/covid-19tracker.png",
     desc: `Covid-19 Tracker built using NODE JS as backend, React for front-end, Chart JS for the overall tracker application and Material UI for the icons. 
     Features include showing complete data analysis of live cases for every country, filtering results on the map and updating the statistics periodically. `,
+    code:`https://github.com/NasreenKhalid/React-Covid-19-Tracker`
   },
   {
     id: 3,
@@ -142,6 +148,7 @@ const menu = [
     Genre: "https://nasreenkhalid.github.io/Maps-Store-Locator/",
     img: "./projects/googlemaps.png",
     desc: `Display a list of stores based on zip codes, filter the results and mark the findings on the map alongwith the store open/close timings.`,
+    code:`https://github.com/NasreenKhalid/Maps-Store-Locator`
   },
 
 
@@ -152,6 +159,7 @@ const menu = [
     Genre: "Express and Node JS",
     img: "./projects/online_books_app.png",
     desc: `CRUD Node JS App to keep a record of books`,
+    code: `In progress`
   },
 
 ];
@@ -175,10 +183,13 @@ function displayMenuItems(menuItems) {
             <header>
               <h5>${item.title}</h5>
               <a class="price" href=${item.Genre} target="_blank">${item.Genre}</a>
-                        </header>
+                                      </header>
+                                     
             <p class="item-text">
               ${item.desc}
             </p>
+            <br>
+            <a class="item-text"  href=${item.code} target="_blank"> <span style="color:blue; font-size:12px;">Source Code:</span> ${item.code} </a>
           </div>
         </article>`;
   });
