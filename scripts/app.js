@@ -163,7 +163,7 @@ const menu = [
   },
   {
     id: 9,
-    title: "E-Commerce Store with Full Payment Functionality using Stripe",
+    title: "E-Commerce Store Stripe Payment",
     category: "React",
     Genre: "https://bestbuy-store.netlify.app/",
     img: "./projects/EcommerceStore.png",
