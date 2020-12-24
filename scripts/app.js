@@ -166,7 +166,7 @@ const menu = [
     title: "E-Commerce Store with Full Payment Functionality using Stripe",
     category: "React",
     Genre: "https://bestbuy-store.netlify.app/",
-    img: "./projects/devbook.png",
+    img: "./projects/EcommerceStore.png",
     desc: `This is an e-commerce store website where you can upload products enabling the user to do the shopping. This app uses Commerce.js SDK for fully functional e-commerce user experience. 
     Features include: Create/Update/Delete Products, Add/Remove to/from Cart, Payment with notification and confirmation.
         Using React framework with Commerce.js SDK API integrtion and Stripe for Payment Module. `,
